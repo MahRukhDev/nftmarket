@@ -7,45 +7,6 @@
     <!-- <meta X-Frame-Options="SAMEORIGIN" http-equiv="Content-Security-Policy" content="frame-ancestors 'none'"> -->
     <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
-    <!-- Social: Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="iAssets.market" />
-    <meta
-      name="twitter:description"
-      content="You can turn your photos, paintings, videos, music, ideas, patents, documents, and other types of digital files into NFT Tokens."
-    />
-    <meta
-      property="twitter:image:src"
-      content="https://iassets.market/static/images/logo.png"
-    />
-    <meta
-      property="twitter:image"
-      content="https://iassets.market/static/images/logo.png"
-    />
-
-    <meta name="twitter:site" content="@iassets_org" />
-
-    <!-- Social: Facebook / Open Graph -->
-    <meta property="og:url" content="/app/" />
-
-    <meta property="og:title" content="iassets.market" />
-
-    <meta
-      property="og:image"
-      content="https://iassets.market/static/images/logo.png"
-    />
-    <meta
-      property="og:description"
-      content="You can turn your photos, paintings, videos, music, ideas, patents, documents, and other types of digital files into NFT Tokens."
-    />
-    <meta property="og:site_name" content="iAssets.market | NFT" />
-
-    <meta property="og:type" content="article" />
-
-    <!-- TelegramInstant view meta Tags-->
-    <meta property="tg:site_verification" />
-    <meta name="telegram:channel" content="@iassets" />
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/static/css/owl.carousel.min.css" />
@@ -124,7 +85,7 @@
       autoSetTheme();
     </script>
 
-    <title>App | iAssets.market</title>
+    <title>Privacy policy | iAssets.market</title>
   </head>
 
   <body>
@@ -398,6 +359,17 @@
     </nav>
 
     <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7">
+            <div class="title-header">
+              <h1><span></span>PRIVACY POLICY</h1>
+              <p>Last Updated: July 3, 2021</p>
+            </div>
+          </div>
+          <div class="col-lg-5"></div>
+        </div>
+      </div>
       <div class="line-header">
         <img
           src="/static/images/resource/vectors/lines.svg"
@@ -407,330 +379,313 @@
       </div>
     </header>
 
-    <section class="token">
+    <section class="term-policy">
       <div class="container">
-        <div class="create-token">
-          <div class="row main-token">
-            <div class="col-12">
-              <div class="row">
-                <div class="col-lg-6">
-                  <div class="uploader">
-                    <label for="" class="form-label">Uploader</label>
-                    <div class="progress" id="web-worker-progress">
-                      <div
-                        class="progress-bar bg-success"
-                        role="progressbar"
-                        style="width: 0%"
-                        aria-valuenow="25"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
-                      ></div>
-                    </div>
-                    <label
-                      for="file-upload-create"
-                      class="custom-file-upload"
-                      id="cover-file-upload-create"
-                    >
-                      <div>
-                        <i class="fas fa-cloud-upload-alt"></i>
-                        <span>Upload Image/Gif</span>
-                      </div>
-                    </label>
-                    <input
-                      id="file-upload-create"
-                      accept="image/*"
-                      onchange="compressImage(event, true);"
-                      type="file"
-                    />
-                  </div>
-                  <div class="form">
-                    <div class="form-group col-lg-12">
-                      <label for="" class="form-label"
-                        >Price of each token (BNB)</label
-                      >
-                      <input
-                        type="text"
-                        id="priceInput"
-                        placeholder="Example: 0.7"
-                        id="originPrice"
-                        class="form-control priceInput"
-                      />
-                      <small></small>
-                    </div>
-                  </div>
-                  <div class="calc">
-                    <div class="item" id="orginalValue">
-                      <h4>0.00 BNB</h4>
-                      <p>Price</p>
-                    </div>
-                    <div class="sign">
-                      <i class="fas fa-minus"></i>
-                    </div>
-                    <div class="item" id="taxValue">
-                      <h4>0.00 BNB</h4>
-                      <p>Tax (2.5%)</p>
-                    </div>
-                    <div class="sign">
-                      <i class="fas fa-equals"></i>
-                    </div>
-                    <div class="item" id="reviceValue">
-                      <h4>0.00 BNB</h4>
-                      <p>Income</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-lg-6">
-                  <div class="form">
-                    <div class="row">
-                      <div class="form-group col-lg-6">
-                        <label for="" class="form-label"
-                          >Give your NFT a Title</label
-                        >
-                        <input
-                          type="text"
-                          placeholder="My NFT Token Title"
-                          id="titleinput"
-                          class="form-control titleinput"
-                        />
-                        <small></small>
-                      </div>
-                      <div class="form-group col-lg-6">
-                        <label for="" class="form-label"
-                          >What is your country of origin?</label
-                        >
-                        <input
-                          type="text"
-                          placeholder="My Country"
-                          id="originInput"
-                          class="form-control originInput"
-                        />
-                        <small></small>
-                      </div>
-                      <div class="form-group col-lg-6">
-                        <label for="" class="form-label"
-                          >How many NFTs will you create today?</label
-                        >
-                        <input
-                          type="text"
-                          placeholder="Example: 1"
-                          id="numberInput"
-                          class="form-control numberInput"
-                        />
-                        <small></small>
-                      </div>
-                      <!-- <div class="form-group col-lg-6">
-                                            <label for="" class="form-label">Price of each token (BNB)</label>                                                
-                                            <input type="text" placeholder="Example: 0.7" id="priceInput" class="form-control">
-                                        </div> -->
-                    </div>
-                    <div>
-                      <label for="" class="form-label">Describe your NFT</label>
-                      <textarea
-                        id="descriptionInput"
-                        cols="10"
-                        rows="8"
-                        class="form-control"
-                        placeholder="This is My Art, and it is Beautiful"
-                      ></textarea>
-                    </div>
-                    <div class="col-12 mt-4">
-                      <div
-                        class="d-flex justify-content-between flex-column flex-md-row"
-                      >
-                        <div class="d-flex">
-                          <div>
-                            <button
-                              class="btn-green"
-                              id="actionApprove"
-                              onclick="approve()"
-                            >
-                              Approve
-                            </button>
-                            <button
-                              class="btn-green"
-                              id="actionMint"
-                              onclick="mint()"
-                            >
-                              Mint
-                            </button>
-                          </div>
-                          <div class="anything d-flex ms-2">
-                            <input
-                              type="radio"
-                              class="btn-check"
-                              name="typeToken"
-                              value="1"
-                              id="success-outlined"
-                              checked
-                            />
-                            <label
-                              class="btn btn-outline-success"
-                              for="success-outlined"
-                              >Public</label
-                            >
+        <div class="box">
+          <p style="text-align: justify">
+            This Privacy Policy describes the policies and procedures of
+            NFTBlackMarket Platform (“we,” “our,” or “us”) pertaining to the
+            collection, use, and disclosure of your information on
+            nftblackmarket.io and related decentralized applications and
+            products we offer (the “Services” or “NFTBlackMarket”).
+          </p>
 
-                            <input
-                              type="radio"
-                              class="btn-check"
-                              name="typeToken"
-                              value="2"
-                              id="danger-outlined"
-                            />
-                            <label
-                              class="btn btn-outline-danger"
-                              for="danger-outlined"
-                              >Private</label
-                            >
-                          </div>
-                        </div>
-                        <div>
-                          <a
-                            href="#list-token"
-                            class="btn-navy mt-2 mt-md-0 d-block w-100 text-center"
-                            >List of my nft tokens
-                            <i class="fas fa-caret-down ms-2"></i
-                          ></a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="notice warning">
-          <div class="bordered"></div>
-          <p>
-            <span>Note : </span> Creating a Token is free. You don't pay any fee
-            for storage. However, for each Transaction, you need to pay the
-            Binance Smart chain Network Transaction fee.
+          <h3>OVERVIEW</h3>
+          <p style="text-align: justify">
+            Your privacy is important to us. At NFTBlackMarket, we follow a few
+            fundamental principles: We don’t ask you for personally identifiable
+            information (defined below). That being said, your contact
+            information, such as your phone number, social media handle, or
+            email address (depending on how you contact us), may be collected
+            when you communicate with us or if you report a bug or other error
+            related to NFTBlackMarket. We don’t share your information with
+            third parties except to deliver you our Services and products,
+            comply with the law, make NFTBlackMarket better, protect our rights,
+            or effectuate a business transfer. We’re not a huge, faceless
+            corporation. We’re just developers trying to deliver an incredible
+            product. If you have any questions or concerns about this policy,
+            please reach out to us at
+            <a
+              href="/cdn-cgi/l/email-protection"
+              class="__cf_email__"
+              data-cfemail="275452575748555367494153454b46444c4a46554c4253094e48"
+              >[email&#160;protected]</a
+            >
+            .
           </p>
-          <p>
-            <span>Note : </span> Make sure you have a minimum of 0.01 BNB in
-            your account to support BSC network transaction fee.
-          </p>
-          <p>
-            <span>Note : </span> When you choose a token to be private, you can
-            not put it on the public marketplace and can only send it manually
-            to another address.
-          </p>
-          <p><span>Note : </span> Do not use emojis in token information.</p>
-        </div>
 
-        <div class="list-token" id="list-token">
-          <div class="row">
-            <div class="col-12">
-              <div class="header-list-token">
-                <div class="section-header">
-                  <h4>MY ART NFT TOKENS</h4>
-                  <p>List of my art nft tokens in the Binance Smart Chain</p>
-                </div>
-                <div class="buttons">
-                  <button
-                    class="btn-icon btn-icon-purple"
-                    onclick="changeStyle(1)"
-                  >
-                    <i class="fas fa-th-large"></i>
-                  </button>
-                  <button
-                    class="btn-icon btn-icon-gray"
-                    onclick="changeStyle(0)"
-                  >
-                    <i class="fas fa-bars"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="col-12">
-              <div class="content-list-token">
-                <div class="row" id="content-list"></div>
-              </div>
-            </div>
-          </div>
+          <h3>HOW YOU ACCEPT THIS POLICY</h3>
+          <p style="text-align: justify">
+            By using NFTBlackMarket, using our app, visiting our website, you
+            agree to the use, disclosure, and procedures outlined in this
+            Privacy Policy.
+          </p>
+
+          <h3>WHAT PERSONAL INFORMATION DO WE COLLECT FROM OUR USERS?</h3>
+          <p style="text-align: justify">
+            The information we collect from you falls into two categories: (i)
+            personally identifiable information (i.e., data that could
+            potentially identify you as an individual) (“Personal Information”),
+            and (ii) non-personally identifiable information (i.e., information
+            that cannot be used to identify who you are) (“Non-Personal
+            Information”). This Privacy Policy covers both categories and will
+            tell you how we might collect and use each type. We do our best not
+            to collect any Personal Information from NFTBlackMarket users. That
+            being said, when using our Services, we do collect PUBLIC wallet
+            addresses that you generate through your wallet. Further, we may
+            collect some Personal Information from you when you communicate with
+            us, including your contact information, such as your phone number,
+            social media handle, or email address (depending on how you reach
+            out). Like other online services, we also collect a variety of
+            Non-Personal Information, including: Information you create through
+            the NFTBlackMarket’s website or decentralized applications,
+            including public wallet addresses. Various analytics data, such as:
+            (i) the IP address of the computer you use to access NFTBlackMarket;
+            (ii) the type of browser software you are using; (iii) the operating
+            system you are using; (iv) the date and time you access or use
+            NFTBlackMarket; (v) the website address, if any, that linked you to
+            NFTBlackMarket; (vi) the website address, if any, you leave our
+            website and travel to; and (vii) other non-personally identifiable
+            traffic data.
+          </p>
+
+          <h3>HOW WE COLLECT INFORMATION</h3>
+          <p style="text-align: justify">
+            When You Contact Us. We may collect certain information if you
+            choose to contact us, if you use our Services or if you report a bug
+            or other error with NFTBlackMarket. This may include contact
+            information such as your name, email address, phone number, and
+            public wallet address. We, or companies that provide services on our
+            behalf, may also collect certain Non-Personal Information from you,
+            such as your locally hosted public wallet (a “Wallet”)
+            addresses.Information We Automatically Collect Users who visit our
+            website or use our application may have their device’s IP address
+            logged for the purpose of generating anonymous statistics or
+            troubleshooting the performance of our web servers. Your IP address
+            will not be used to track or identify you, but may be used to
+            determine your geographic location in order to determine which of
+            our services you are presented with. Users of our website or
+            decentralized applications will receive an anonymous unique device
+            id (“UDID”) for the purpose of identifying the device to
+            NFTBlackMarket servers. This UDID will not be tied to users’
+            identities, but will be used for debugging purposes and to
+            differentiate devices when users access our Services using multiple
+            devices.Third Party Services Certain features on NFTBlackMarket rely
+            on various third-party products and services (collectively “Third
+            Party Services”), such as the Binance network, Google Analytics,
+            Apple’s application platform, Trust Wallet, Metamask. These services
+            may collect certain Personal Information, such as your public Wallet
+            addresses. NFTBlackMarket uses Google Analytics, a web analytics
+            service provided by Google, Inc. (“Google”). Google uses cookies to
+            help the website analyze how users use our website. The information
+            generated by the cookie about your use of our website (including
+            your IP address) will be transmitted to and stored by Google on
+            servers in the United States. Google will use this information for
+            the purpose of evaluating your use of the website, compiling reports
+            on website activity for website operators and providing other
+            services relating to website activity and internet usage. Google may
+            also transfer this information to third parties where required to do
+            so by law, or where such third parties process the information on
+            Google’s behalf. Google will not associate your IP address with any
+            other data held by Google. You may choose to accept the cookies by
+            selecting the appropriate settings on your browser if you do this
+            you may not be able to use the full functionality of our website. By
+            using our website, you consent to the processing of data about you
+            by Google in the manner and for the purposes set out above. Please
+            note that your use of these Third Party Services is governed by
+            their respective Terms of Service and Privacy Policies. We use and
+            disclose any collected information in accordance with our own
+            Privacy Policy.
+          </p>
+
+          <h3>HOW WE USE THE INFORMATION WE GATHER</h3>
+          <p style="text-align: justify">
+            We primarily use the limited information we collect to enhance
+            NFTBlackMarket. Except if we sell all or a portion of our business,
+            or as otherwise described below, we do not rent, trade, or sell your
+            Personal Information. Use of Information to Provide NFTBlackMarket
+            to You Some ways we may use your Personal Information are to:
+            Contact you when necessary; Respond to your comments, questions, or
+            issues related to bugs or errors with NFTBlackMarket; Provide you
+            with additional information; Send you information and marketing
+            materials about services and products available through
+            NFTBlackMarket, using push notifications or other means; Train our
+            team members; or Other internal business purposes. Aggregated
+            Personal Data and Non-Personal Information We may share or disclose
+            aggregated Personal Data or Non-Personal Information with service
+            providers or with other persons we conduct business with, including
+            but not limited potential third-parties for the purpose of
+            showcasing the performance of the company. These service providers
+            and other persons may also share with us aggregated Non-Personal
+            Information that they have independently developed or acquired.
+            Additionally, we may combine aggregate information from the pixel
+            tags, web beacons, and cookies with similar data we collect from
+            other visitors to help us improve our Services. When doing so, we do
+            our best to ensure that the any aggregated information cannot be
+            linked back to you.
+          </p>
+
+          <h3>Agents or Third Party Partners</h3>
+          <p style="text-align: justify">
+            We may provide your Personal Information to our employees,
+            contractors, agents, service providers, and designees (“Agents”) to
+            enable them to perform certain services for us exclusively,
+            including: Improvement of website-related services and features; and
+            Perform maintenance services. Business Transfers We may choose to
+            buy or sell assets. In these types of transactions, customer
+            information is typically one of the business assets that would be
+            transferred. Also, if we (or our assets) are acquired, or if we go
+            out of business, enter bankruptcy, or go through some other change
+            of control, your Personal Information could be one of the assets
+            transferred to or acquired by a third party. By accepting this
+            Privacy Policy, as outlined above, you consent to any such
+            transfer.Protection of Us and Others
+          </p>
+          <p style="text-align: justify">
+            We reserve the right to access, read, preserve, and disclose any
+            information that we reasonably believe is necessary to: comply with
+            the law or a court order; cooperate with law enforcement; enforce or
+            apply our Terms of Use and other agreements; or protect the rights,
+            property, or safety of NFTBlackMarket, our employees, our users, or
+            others.
+          </p>
+
+          <h3>‍WHAT PERSONAL INFORMATION CAN I ACCESS OR CHANGE?</h3>
+          <p style="text-align: justify">
+            You can request access to the information we have collected from
+            you. You can do this by contacting us at
+            <a
+              href="/cdn-cgi/l/email-protection"
+              class="__cf_email__"
+              data-cfemail="780b0d0808170a0c38161e0c1a14191b1315190a131d0c56111756"
+              >[email&#160;protected]</a
+            >
+            We will make sure to provide you with a copy of the data we process
+            about you. To comply with your request, we may ask you to verify
+            your identity. We will fulfill your request by sending your copy
+            electronically. For any subsequent access request, we may charge you
+            with an administrative fee. If you believe that the information we
+            have collected is incorrect, you are welcome to contact us so we can
+            update it and keep your data accurate. Any data that is no longer
+            needed for purposes specified in the “How We Use the Information We
+            Gather” section will be deleted after ninety (90) days. Wallet
+            addresses created through the NFTBlackMarket application cannot be
+            deleted from the Binance blockchain, therefore we are unable to
+            delete this personal information. If at any point you wish for
+            NFTBlackMarket to delete information about you, you may contact us
+            at
+            <a
+              href="/cdn-cgi/l/email-protection"
+              class="__cf_email__"
+              data-cfemail="cab9bfbabaa5b8be8aa4acbea8a6aba9a1a7abb8a1afbee4a3a5e4"
+              >[email&#160;protected]</a
+            >
+          </p>
+
+          <h3>DATA RETENTION</h3>
+          <p style="text-align: justify">
+            If you stop to use decentralized application, or request that your
+            information be deleted, we still may retain some information that
+            you have provided to us to maintain NFTBlackMarket or to comply with
+            relevant laws.
+          </p>
+
+          <h3>DATA SECURITY</h3>
+          <p style="text-align: justify">
+            We are committed to making sure your information is protected and
+            have selected third-party vendors which use the Binance network,
+            including Trust Wallet and Metamask, that help keep your Personal
+            Information safe. Unfortunately, we do not control these third
+            parties and therefore cannot guarantee complete security. We employ
+            several physical and electronic safeguards to keep your information
+            safe, including encrypted user passwords, two factor verification
+            and authentication on passwords where possible, and securing all
+            connections with industry standard transport layer security. Even
+            with all these precautions, we cannot fully guarantee against the
+            access, disclosure, alteration, or deletion of data through events,
+            including but not limited to hardware or software failure or
+            unauthorized use. Any information that you provide to us is done so
+            entirely at your own risk.
+          </p>
+
+          <h3>CHILDREN</h3>
+          <p style="text-align: justify">
+            We are especially sensitive about children’s information. Our
+            Services are not targeted towards children, and we don’t knowingly
+            collect information from children under the age of 13. If you are a
+            parent or legal guardian of a minor child, we will treat any
+            information that you provide us while using NFTBlackMarket on behalf
+            of your minor child as Personal Information as otherwise provided in
+            this Privacy Policy. If you have questions concerning our
+            information practices with respect to children, or if you learn that
+            a child under the age of 13 has used NFTBlackMarket, created a user
+            account, or provided us with personal information, please email us
+            at
+            <a
+              href="/cdn-cgi/l/email-protection"
+              class="__cf_email__"
+              data-cfemail="0e7d7b7e7e617c7a4e60687a6c626f6d65636f7c656b7a20676120"
+              >[email&#160;protected]</a
+            >
+          </p>
+
+          <h3>ONLINE TRACKING AND HOW WE RESPOND TO DO NOT TRACK SIGNALS</h3>
+          <p style="text-align: justify">
+            Online tracking is the collection of data about an individual’s
+            Internet activity used to deliver targeted advertisements and for
+            other purposes. Some web browsers (including Safari, Internet
+            Explorer, Firefox, and Chrome) incorporate a “Do Not Track” (DNT) or
+            similar feature that signals to websites that a visitor does not
+            want to have his/her online activity and behavior tracked. If an
+            online service elects to respond to a particular DNT signal, the
+            service may refrain from collecting certain personal information
+            about the browser’s user. Not all browsers offer a DNT option and
+            there is currently no industry consensus as to what constitutes a
+            DNT signal. For these reasons, many website operators, including
+            NFTBlackMarket, do not take action to respond to DNT signals. For
+            more information about DNT signals, visit
+            http://allaboutdnt.com.CHANGES AND UPDATES TO PRIVACY POLICY
+          </p>
+          <p>
+            We reserve the right to update and revise this privacy policy at any
+            time. We occasionally review this Privacy Policy to make sure it
+            complies with applicable laws and conforms to changes in our
+            business. We may need to update this Privacy Policy, and we reserve
+            the right to do so at any time. If we do revise this Privacy Policy,
+            we will update the “Effective Date” at the bottom of this page so
+            that you can tell if it has changed since your last visit and will
+            do our best to notify you. Please review this Privacy Policy
+            regularly to ensure that you are aware of its terms. Any use of
+            NFTBlackMarket after an amendment to our Privacy Policy constitutes
+            your acceptance to the revised or amended agreement.
+          </p>
+
+          <h3>INTERNATIONAL USERS AND VISITORS</h3>
+          <p style="text-align: justify">
+            If you are a user accessing the Services from the European Union,
+            USA, Asia, or any other region with laws or regulations governing
+            personal data collection, use, and disclosure that differ from
+            United States laws, please be advised that through your continued
+            use of the Services, which is governed by US law, you are
+            transferring your Personal Information to the United States and you
+            consent to that transfer.
+          </p>
+
+          <h3>QUESTIONS</h3>
+          <p style="text-align: justify">
+            We’d be happy to answer them. Shoot us an email or send us a note:
+            Email:
+            <a
+              href="/cdn-cgi/l/email-protection"
+              class="__cf_email__"
+              data-cfemail="8af9fffafae5f8fecae4ecfee8e6ebe9e1e7ebf8e1effea4e3e5a4"
+              >[email&#160;protected]</a
+            >
+            Thanks for reading our Privacy Policy!
+          </p>
         </div>
       </div>
     </section>
-
-    <script>
-      var isValidTitle = false;
-      var isValidOrigin = false;
-      var isValidCount = false;
-      var isValidPrice = false;
-
-      function validateRealtime(className, regex, errorMessage) {
-        if (!$(className).val().match(regex)) {
-          // there is a mismatch, hence show the error message
-          $(className).addClass("input-error").delay(1000);
-          $(className).parent(".form-group").find("small").text(errorMessage);
-
-          switch (className) {
-            case ".titleinput":
-              isValidTitle = false;
-              break;
-            case ".originInput":
-              isValidOrigin = false;
-              break;
-            case ".numberInput":
-              isValidCount = false;
-              break;
-            case ".priceInput":
-              isValidPrice = false;
-              break;
-          }
-        } else {
-          // else, do not display message
-          $(className).removeClass("input-error").delay(800);
-          $(className).parent(".form-group").find("small").text("");
-
-          switch (className) {
-            case ".titleinput":
-              isValidTitle = true;
-              break;
-            case ".originInput":
-              isValidOrigin = true;
-              break;
-            case ".numberInput":
-              isValidCount = true;
-              break;
-            case ".priceInput":
-              isValidPrice = true;
-              break;
-          }
-        }
-      }
-
-      $(".titleinput").on("keyup", function () {
-        validateRealtime(
-          ".titleinput",
-          /^[A-Za-z0-9\s\-_,\.;:()]+$/,
-          "Invalid title"
-        );
-      });
-
-      $(".originInput").on("keyup", function () {
-        validateRealtime(".originInput", /[a-zA-Z]{2,}/, "Invalid origin");
-      });
-
-      $(".numberInput").on("keyup", function () {
-        validateRealtime(".numberInput", /^\d+$/, "Invalid number");
-      });
-
-      $(".priceInput").on("keyup", function () {
-        validateRealtime(
-          ".priceInput",
-          /^(?!0\d)\d*(\.\d+)?$/,
-          "Invalid price"
-        );
-      });
-
-      $("#descriptionInput").keyup(function () {
-        var $element = $(this);
-        var regex =
-          /(?:[\u2700-\u27bf]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\u0023-\u0039]\ufe0f?\u20e3|\u3299|\u3297|\u303d|\u3030|\u24c2|\ud83c[\udd70-\udd71]|\ud83c[\udd7e-\udd7f]|\ud83c\udd8e|\ud83c[\udd91-\udd9a]|\ud83c[\udde6-\uddff]|\ud83c[\ude01-\ude02]|\ud83c\ude1a|\ud83c\ude2f|\ud83c[\ude32-\ude3a]|\ud83c[\ude50-\ude51]|\u203c|\u2049|[\u25aa-\u25ab]|\u25b6|\u25c0|[\u25fb-\u25fe]|\u00a9|\u00ae|\u2122|\u2139|\ud83c\udc04|[\u2600-\u26FF]|\u2b05|\u2b06|\u2b07|\u2b1b|\u2b1c|\u2b50|\u2b55|\u231a|\u231b|\u2328|\u23cf|[\u23e9-\u23f3]|[\u23f8-\u23fa]|\ud83c\udccf|\u2934|\u2935|[\u2190-\u21ff])/g;
-        $element.val($element.val().replace(regex, ""));
-      });
-    </script>
 
     <footer>
       <div class="container">
@@ -2075,6 +2030,11 @@
         <img class="modal-content" id="full-image" />
       </div>
     </div>
+
+    <script
+      data-cfasync="false"
+      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
+    ></script>
   </body>
 
   <!-- Walletconnect -->

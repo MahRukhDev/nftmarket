@@ -26,7 +26,7 @@
     <meta name="twitter:site" content="@iassets_org" />
 
     <!-- Social: Facebook / Open Graph -->
-    <meta property="og:url" content="/app/" />
+    <meta property="og:url" content="/app-music/" />
 
     <meta property="og:title" content="iassets.market" />
 
@@ -414,8 +414,8 @@
             <div class="col-12">
               <div class="row">
                 <div class="col-lg-6">
-                  <div class="uploader">
-                    <label for="" class="form-label">Uploader</label>
+                  <div class="uploader music">
+                    <label for="" class="form-label">Upload Cover</label>
                     <div class="progress" id="web-worker-progress">
                       <div
                         class="progress-bar bg-success"
@@ -443,21 +443,35 @@
                       type="file"
                     />
                   </div>
-                  <div class="form">
-                    <div class="form-group col-lg-12">
-                      <label for="" class="form-label"
-                        >Price of each token (BNB)</label
-                      >
-                      <input
-                        type="text"
-                        id="priceInput"
-                        placeholder="Example: 0.7"
-                        id="originPrice"
-                        class="form-control priceInput"
-                      />
-                      <small></small>
-                    </div>
+
+                  <div class="uploader music">
+                    <label for="" class="form-label">Upload Music</label>
+                    <label
+                      for="file-upload-music"
+                      class="custom-file-upload-music"
+                      id="cover-file-upload-music"
+                    >
+                      <div class="remove-file"></div>
+                      <div class="content" id="showMusicUploaded">
+                        <i class="fas fa-cloud-upload-alt"></i>
+
+                        <span>Upload Music File</span>
+                      </div>
+                    </label>
+                    <input
+                      id="file-upload-music"
+                      accept="audio/*"
+                      onchange="uploadMusicFile(event, true);"
+                      type="file"
+                    />
                   </div>
+
+                  <!-- <div class="form">
+                                    <div class="form-group col-lg-12">
+                                        <label for="" class="form-label">Price of each token (BNB)</label>
+                                        <input type="text" id="priceInput" placeholder="Example: 0.7" id="originPrice" class="form-control">
+                                    </div>
+                                </div> -->
                   <div class="calc">
                     <div class="item" id="orginalValue">
                       <h4>0.00 BNB</h4>
@@ -468,7 +482,8 @@
                     </div>
                     <div class="item" id="taxValue">
                       <h4>0.00 BNB</h4>
-                      <p>Tax (2.5%)</p>
+                      <p>Artist-Tax (0.5%)</p>
+                      <p>Platform-Tax (2%)</p>
                     </div>
                     <div class="sign">
                       <i class="fas fa-equals"></i>
@@ -518,10 +533,18 @@
                         />
                         <small></small>
                       </div>
-                      <!-- <div class="form-group col-lg-6">
-                                            <label for="" class="form-label">Price of each token (BNB)</label>                                                
-                                            <input type="text" placeholder="Example: 0.7" id="priceInput" class="form-control">
-                                        </div> -->
+                      <div class="form-group col-lg-6">
+                        <label for="" class="form-label"
+                          >Price of each token (BNB)</label
+                        >
+                        <input
+                          type="text"
+                          id="priceInput"
+                          placeholder="Example: 0.7"
+                          class="form-control priceInput"
+                        />
+                        <small></small>
+                      </div>
                     </div>
                     <div>
                       <label for="" class="form-label">Describe your NFT</label>
@@ -549,7 +572,7 @@
                             <button
                               class="btn-green"
                               id="actionMint"
-                              onclick="mint()"
+                              onclick="mintMusic()"
                             >
                               Mint
                             </button>
@@ -599,6 +622,7 @@
             </div>
           </div>
         </div>
+
         <div class="notice warning">
           <div class="bordered"></div>
           <p>
@@ -623,8 +647,8 @@
             <div class="col-12">
               <div class="header-list-token">
                 <div class="section-header">
-                  <h4>MY ART NFT TOKENS</h4>
-                  <p>List of my art nft tokens in the Binance Smart Chain</p>
+                  <h4>MY MUSIC NFT TOKENS</h4>
+                  <p>List of my music nft tokens in the Binance Smart Chain</p>
                 </div>
                 <div class="buttons">
                   <button
