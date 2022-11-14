@@ -302,7 +302,7 @@ async function getAccount() {
         $.post(getBaseUrl() + "balance/", { address: account },
             function(returnedData){
                 balanceBNB.innerHTML = "<span>Balance BNB : </span>" + returnedData.bnb;
-                balanceNBM.innerHTML = "<span>Balance NBM : </span>" + returnedData.nbm;
+                balanceNBM.innerHTML = "<span>Balance MGA : </span>" + returnedData.nbm;
                 setCookie('minter',returnedData.minter, 2);
                 setCookie('minterMusic',returnedData.minterMusic, 2);
                 
@@ -2210,7 +2210,7 @@ async function fetchAccountData() {
         $.post(getBaseUrl() + "balance/", { address: account },
             function(returnedData){
                 balanceBNB.innerHTML = "<span>Balance BNB : </span>" + returnedData.bnb;
-                balanceNBM.innerHTML = "<span>Balance NBM : </span>" + returnedData.nbm;
+                balanceNBM.innerHTML = "<span>Balance MGA : </span>" + returnedData.nbm;
                 setCookie('minter',returnedData.minter, 2);
                 setCookie('minterMusic',returnedData.minterMusic, 2);
                 if (getAppUrl() == 'app'){

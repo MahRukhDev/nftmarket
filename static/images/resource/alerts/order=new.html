@@ -1,192 +1,252 @@
-
 <html>
   <head>
-       
-    
-
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <!-- <meta X-Frame-Options="SAMEORIGIN" http-equiv="Content-Security-Policy" content="frame-ancestors 'none'"> -->
-    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta http-equiv="Access-Control-Allow-Origin" content="*" />
 
-    
-
-    
-
-    
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/static/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/static/css/viewer.css">
-    <link rel="stylesheet" href="/static/css/blackmarket/style-system.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="/static/css/blackmarket/all.css">
-    
-    <link rel="shortcut icon" href="/static/images/favicon.svg">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/static/css/viewer.css" />
+    <link rel="stylesheet" href="/static/css/blackmarket/style-system.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/blackmarket/all.css" />
 
-    <link rel="shortcut icon" href="/static/images/Icons/favicon.svg" type="image/x-icon"> 
-    <link rel="shortcut icon" href="/static/images/Icons/favicon.png" type="image/x-icon"> 
-    <link rel="apple-touch-icon" href="/static/images/Icons/favicon.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/static/images/Icons/favicon.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/images/Icons/favicon.png">
-    <link rel="apple-touch-icon" sizes="167x167" href="/static/images/Icons/favicon.png">
-    <link rel="apple-touch-startup-image" href="/static/images/Icons/favicon.png">
+    <link rel="shortcut icon" href="/icon.png" />
+
+    <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon.png" />
+    <link rel="apple-touch-icon" sizes="167x167" href="/icon.png" />
+    <link rel="apple-touch-startup-image" href="/icon.png" />
     <script src="/static/js/blackmarket/jquery-3.4.1.min.js"></script>
 
-
     <script>
-      var darkMode = '<link rel="stylesheet" href="/static/css/blackmarket/style-dark.css" id="darktheme">'
-      var lightMode = '<link rel="stylesheet" href="/static/css/blackmarket/style.css" id="lighetheme">'
+      var darkMode =
+        '<link rel="stylesheet" href="/static/css/blackmarket/style-dark.css" id="darktheme">';
+      var lightMode =
+        '<link rel="stylesheet" href="/static/css/blackmarket/style.css" id="lighetheme">';
 
-      function getCookie(c_name){
-          if (document.cookie.length > 0){
-              c_start = document.cookie.indexOf(c_name + "=");
-              if (c_start != -1){
-                  c_start = c_start + c_name.length + 1;
-                  c_end = document.cookie.indexOf(";", c_start);
-                  if (c_end == -1) c_end = document.cookie.length;
-                  return unescape(document.cookie.substring(c_start,c_end));
-              }
+      function getCookie(c_name) {
+        if (document.cookie.length > 0) {
+          c_start = document.cookie.indexOf(c_name + "=");
+          if (c_start != -1) {
+            c_start = c_start + c_name.length + 1;
+            c_end = document.cookie.indexOf(";", c_start);
+            if (c_end == -1) c_end = document.cookie.length;
+            return unescape(document.cookie.substring(c_start, c_end));
           }
-          return "";
+        }
+        return "";
       }
 
-      function autoSetTheme(){
-          var typeTheme = getCookie('theme');
-          if(typeTheme === 'dark'){
-              $('head').delay("slow").append(darkMode)
-              $('#lighetheme').remove()       
-          }else if(typeTheme === 'light'){
-              $('head').delay("slow").append(lightMode)
-              $('#darktheme').remove()
-          }
-
+      function autoSetTheme() {
+        var typeTheme = getCookie("theme");
+        if (typeTheme === "dark") {
+          $("head").delay("slow").append(darkMode);
+          $("#lighetheme").remove();
+        } else if (typeTheme === "light") {
+          $("head").delay("slow").append(lightMode);
+          $("#darktheme").remove();
+        }
       }
 
-      autoSetTheme()
+      autoSetTheme();
+    </script>
 
-  </script>
-
-
-    <title>
-    Search
- | iAssets.market  </title>
-    
+    <title>Search | Mastermind Game Nft Marketplace</title>
   </head>
-  
+
   <body>
-    
-
-
-    
-        
-
-
-
-<!-- URL CHECK -->
-<!-- <div id="url-warning-code">        
-    <div class="url-warning">
-        <div class="container-xl">
-            <div class="left">
-                <img src="/static/images/vector/url-logo.svg" alt="">                    
-                <div><span class="title">Warning : </span> Please make sure you’re visiting <span class="url">https://nftblackmarket.io</span> - check the URL carefully.</div>
-            </div>
-            <div class="right">
-                <button class="btn" onclick="closeUrlWarning()">
-                    <i class="fas fa-times color-btn-url"></i>
-                </button>
-            </div>  
-        </div>
-    </div>        
-</div> -->
-
-<!-- Navbar - Repaet in each page -->
+    <!-- Navbar - Repaet in each page -->
     <nav class="navbar navbar-expand-lg" id="home">
-        <div class="container">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="179.2"
+            height="38"
+            viewBox="0 0 179.2 38"
+          >
+            <style>
+              svg text {
+                font-family: inter;
+              }
+            </style>
+            <g id="Logo" transform="translate(-300 -37)">
+              <g
+                id="Group_13"
+                data-name="Group 13"
+                transform="translate(300 37)"
+              >
+                <rect
+                  id="Rectangle_1"
+                  data-name="Rectangle 1"
+                  width="4"
+                  height="20"
+                  transform="translate(0 15)"
+                  fill="#18171b"
+                />
+                <rect
+                  id="Rectangle_4"
+                  data-name="Rectangle 4"
+                  width="4"
+                  height="20"
+                  transform="translate(42 15)"
+                  fill="#18171b"
+                />
+                <rect
+                  id="Rectangle_5"
+                  data-name="Rectangle 5"
+                  width="3"
+                  height="18"
+                  transform="translate(49)"
+                  fill="#18171b"
+                />
+                <rect
+                  id="Rectangle_6"
+                  data-name="Rectangle 6"
+                  width="3"
+                  height="23"
+                  transform="translate(22)"
+                  fill="#18171b"
+                />
+                <rect
+                  id="Rectangle_7"
+                  data-name="Rectangle 7"
+                  width="3"
+                  height="8"
+                  transform="translate(15 15)"
+                  fill="#18171b"
+                />
+                <rect
+                  id="Rectangle_8"
+                  data-name="Rectangle 8"
+                  width="4"
+                  height="8"
+                  transform="translate(35 15)"
+                  fill="#18171b"
+                />
+                <rect
+                  id="Rectangle_2"
+                  data-name="Rectangle 2"
+                  width="4"
+                  height="35"
+                  transform="translate(7)"
+                  fill="#18171b"
+                />
+                <rect
+                  id="Rectangle_3"
+                  data-name="Rectangle 3"
+                  width="4"
+                  height="35"
+                  transform="translate(28)"
+                  fill="#18171b"
+                />
+              </g>
+              <text
+                id="Black_Market"
+                data-name="Black Market"
+                transform="translate(348.2 71)"
+                fill="#18171b"
+                font-size="18"
+                font-family="Inter-SemiBold, Inter"
+                font-weight="600"
+              >
+                <tspan x="0" y="0">iAssets Market</tspan>
+              </text>
+            </g>
+          </svg>
+        </a>
 
+        <div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+          <button
+            class="connectButton btn-yellow-menu mt-2 d-lg-none"
+            data-bs-toggle="modal"
+            data-bs-target="#connectWallet"
+          >
+            Connect
+          </button>
+        </div>
 
-
-            <a class="navbar-brand" href="/">   
-                <svg xmlns="http://www.w3.org/2000/svg" width="179.2" height="38" viewBox="0 0 179.2 38">
-                    <style>      
-                        svg text{
-                            font-family:inter
-                        }
-                    </style>
-                    <g id="Logo" transform="translate(-300 -37)">
-                      <g id="Group_13" data-name="Group 13" transform="translate(300 37)">
-                        <rect id="Rectangle_1" data-name="Rectangle 1" width="4" height="20" transform="translate(0 15)" fill="#18171b"/>
-                        <rect id="Rectangle_4" data-name="Rectangle 4" width="4" height="20" transform="translate(42 15)" fill="#18171b"/>
-                        <rect id="Rectangle_5" data-name="Rectangle 5" width="3" height="18" transform="translate(49)" fill="#18171b"/>
-                        <rect id="Rectangle_6" data-name="Rectangle 6" width="3" height="23" transform="translate(22)" fill="#18171b"/>
-                        <rect id="Rectangle_7" data-name="Rectangle 7" width="3" height="8" transform="translate(15 15)" fill="#18171b"/>
-                        <rect id="Rectangle_8" data-name="Rectangle 8" width="4" height="8" transform="translate(35 15)" fill="#18171b"/>
-                        <rect id="Rectangle_2" data-name="Rectangle 2" width="4" height="35" transform="translate(7)" fill="#18171b"/>
-                        <rect id="Rectangle_3" data-name="Rectangle 3" width="4" height="35" transform="translate(28)" fill="#18171b"/>
-                      </g>
-                      <text id="Black_Market" data-name="Black Market" transform="translate(348.2 71)" fill="#18171b" font-size="18" font-family="Inter-SemiBold, Inter" font-weight="600"><tspan x="0" y="0">iAssets Market</tspan></text>
-                    </g>
-                </svg>
-                  
-            </a>
-
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <button class="connectButton btn-yellow-menu mt-2 d-lg-none" data-bs-toggle="modal" data-bs-target="#connectWallet">Connect</button>
-            </div>
-
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">                        
-                    <!-- <li class="nav-item">
+        <div
+          class="collapse navbar-collapse justify-content-between"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav ml-auto">
+            <!-- <li class="nav-item">
                         <a class="nav-link" href="/">HOME</a>
                     </li> -->
-                    
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="https://t.me/NFTBlackMarketChannel">BLOG</a>
+
+            <!-- <li class="nav-item">
+                        <a class="nav-link" href="https://t.me/+0zeUWfP-ibJkMWQx">BLOG</a>
                     </li> -->
 
-                    <!-- Submenu -->
-                    <li class="nav-item">                            
-                        <a class="nav-link" href="#">EXPLORER
-                        <i class="fas fa-angle-down"></i>
+            <!-- Submenu -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >EXPLORER
+                <i class="fas fa-angle-down"></i>
+              </a>
 
-                        </a>
+              <ul class="submenu">
+                <li>
+                  <a href="/market/"
+                    ><i class="fas fa-images"></i>
+                    <span>Art MARKETPLACE</span></a
+                  >
+                </li>
+                <li>
+                  <a href="/market-music/"
+                    ><i class="fas fa-music"></i>
+                    <span>Music MARKETPLACE</span></a
+                  >
+                </li>
+              </ul>
+            </li>
 
-                        <ul class="submenu">
-                            <li>
-                                <a href="/market/"><i class="fas fa-images"></i> <span>Art MARKETPLACE</span></a>
-                            </li>
-                            <li>
-                                <a href="/market-music/"><i class="fas fa-music"></i> <span>Music MARKETPLACE</span></a>
-                            </li>
-                        </ul>
-                    </li> 
+            <!-- Submenu -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >CREATE
+                <i class="fas fa-angle-down"></i>
+              </a>
 
-                     <!-- Submenu -->
-                     <li class="nav-item">                            
-                        <a class="nav-link" href="#">CREATE
-                        <i class="fas fa-angle-down"></i>
+              <ul class="submenu">
+                <li>
+                  <a href="/app/"
+                    ><i class="fas fa-images"></i> <span>Art NFT</span></a
+                  >
+                </li>
+                <li>
+                  <a href="/app-music/"
+                    ><i class="fas fa-music"></i> <span>Music NFT</span></a
+                  >
+                </li>
+              </ul>
+            </li>
 
-                        </a>
-
-                        <ul class="submenu">
-                            <li>
-                                <a href="/app/"><i class="fas fa-images"></i> <span>Art NFT</span></a>
-                            </li>
-                            <li>
-                                <a href="/app-music/"><i class="fas fa-music"></i> <span>Music NFT</span></a>
-                            </li>
-                        </ul>
-                    </li>
-
-                    
-
-                    <!-- Submenu -->
-                    <!-- <li class="nav-item">                            
+            <!-- Submenu -->
+            <!-- <li class="nav-item">                            
                         <a class="nav-link" href="#">TRADES
                         <i class="fas fa-angle-down"></i>
 
@@ -202,278 +262,375 @@
                         </ul>
                     </li> -->
 
-                    <!-- Submenu -->
-                    <li class="nav-item">                            
-                        <a class="nav-link" href="#">CONTRACTS
-                        <i class="fas fa-angle-down"></i>
+            <!-- Submenu -->
+            <li class="nav-item">
+              <a class="nav-link" href="#"
+                >CONTRACTS
+                <i class="fas fa-angle-down"></i>
+              </a>
 
-                        </a>
+              <ul class="submenu">
+                <li>
+                  <a
+                    href="https://bscscan.com/token/0x6b471d5ab9f3d92a600e7d49a0b135bf6d4c6a5b"
+                    ><span>ASSET (BEP20) - BSC</span></a
+                  >
+                </li>
+                <li>
+                  <a href="https://bscscan.com/"
+                    ><span>NFT (ERC721) - BSC</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://bscscan.com/token/0x60b56458eb27834b09c318d7935842ca1c922d6a"
+                    ><span>NFM (ERC721) - BSC</span></a
+                  >
+                </li>
+              </ul>
+            </li>
 
-                        <ul class="submenu">
-                            <li>
-                                <a href="https://bscscan.com/token/0x6b471d5ab9f3d92a600e7d49a0b135bf6d4c6a5b"><span>ASSET (BEP20) - BSC</span></a>
-                            </li>
-                            <li>
-                                <a href="https://bscscan.com/token/0x014712cc2f006570e379f82fb870087af6ab4b11"><span>NFT (ERC721) - BSC</span></a>
-                            </li>
-                            <li>
-                                <a href="https://bscscan.com/token/0x60b56458eb27834b09c318d7935842ca1c922d6a"><span>NFM (ERC721) - BSC</span></a>
-                            </li>
-                        </ul>
-                    </li> 
-
-                    <!-- <li class="nav-item">
+            <!-- <li class="nav-item">
                         <a class="nav-link" href="/buy/">BUY NBM</a>
                     </li> -->
-                </ul>
-                <div class="d-flex align-items-center">                    
-                    <div class="theme">
-                        <button onclick="changeStyleTheme(true , this)"><i class="bx bxs-moon" ></i></button> / <button onclick="changeStyleTheme(false)"><i class="bx bxs-sun"></i></button>
-                    </div>
-                    <button class="connectButton2 btn-yellow-menu mt-2 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#connectWallet">Connect</button>                
-
-                </div>
-                <!-- <button class="connectButton2 btn-purple mt-2 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#connectWallet">Connect</button> -->
+          </ul>
+          <div class="d-flex align-items-center">
+            <div class="theme">
+              <button onclick="changeStyleTheme(true , this)">
+                <i class="bx bxs-moon"></i>
+              </button>
+              /
+              <button onclick="changeStyleTheme(false)">
+                <i class="bx bxs-sun"></i>
+              </button>
             </div>
+            <button
+              class="connectButton2 btn-yellow-menu mt-2 d-none d-lg-block"
+              data-bs-toggle="modal"
+              data-bs-target="#connectWallet"
+            >
+              Connect
+            </button>
+          </div>
+          <!-- <button class="connectButton2 btn-purple mt-2 d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#connectWallet">Connect</button> -->
         </div>
+      </div>
     </nav>
 
-    
-
-
-    <header >                     
-        <div class="line-header">
-            <img src="/static/images/resource/vectors/lines.svg" class="img-fluid" alt="">      
-        </div>
-    </header> 
+    <header>
+      <div class="line-header">
+        <img
+          src="/static/images/resource/vectors/lines.png"
+          class="img-fluid"
+          alt=""
+        />
+      </div>
+    </header>
 
     <section class="search-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="box">
-                        <h4>Search NFT ART</h4>
-                        <p>Search by Title , File Hash, Address ,Transaction Hash</p>
-                        <form action="/search/" method="GET" id="searchInput">
-                            <div class="inputs-group">
-                                <input type="text" name="search" class="form-control" placeholder="Search ...">
-                                <button class="btn-navy" onclick="submitSearchBox()"><i class="fas fa-search"></i></button>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="options">                
-                        <div class="show-seach">
-                            <h5 id="searchText"></h5>
-                        </div>
-                    </div> 
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="box">
+              <h4>Search NFT ART</h4>
+              <p>Search by Title , File Hash, Address ,Transaction Hash</p>
+              <form action="/search/" method="GET" id="searchInput">
+                <div class="inputs-group">
+                  <input
+                    type="text"
+                    name="search"
+                    class="form-control"
+                    placeholder="Search ..."
+                  />
+                  <button class="btn-navy" onclick="submitSearchBox()">
+                    <i class="fas fa-search"></i>
+                  </button>
                 </div>
+              </form>
             </div>
+            <div class="options">
+              <div class="show-seach">
+                <h5 id="searchText"></h5>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-
     <div class="marketplace">
-        <div class="container">
-            <div class="content">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="options">                
-                            <div class="show-seach">
-                                <h5 id="searchText"></h5>
-                            </div>
-                        </div>    
-                    </div>
- 
-                    <div class="col-12">
-                        <div class="row" id="explorer-content">
-
-                            
-                        </div>
-                    </div>                                           
-                    
+      <div class="container">
+        <div class="content">
+          <div class="row">
+            <div class="col-12">
+              <div class="options">
+                <div class="show-seach">
+                  <h5 id="searchText"></h5>
                 </div>
-            </div>           
-
-        </div>
-
-        <!-- Loader Pagination -->
-        <div class="loader-defualt">
-            <div class="w-100 text-center" id="scroll-loader">
-                <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+              </div>
             </div>
+
+            <div class="col-12">
+              <div class="row" id="explorer-content"></div>
+            </div>
+          </div>
         </div>
+      </div>
 
-    </div> 
-
-    
-        
+      <!-- Loader Pagination -->
+      <div class="loader-defualt">
+        <div class="w-100 text-center" id="scroll-loader">
+          <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="information">
-                        <div class="logo">
-                            <a class="navbar-brand" href="/">   
-                                <img src="/static/images/logo.svg" width="185px" alt="">                            
-                            </a>                                
-                        </div>
-                        <p>Empowers creators with Blockchain Technology. Making it more affordable than ever to represent anything as a unique digital asset. On average users save up to 99% on gas fees.</p>
-                        <div class="social">
-                            <ul>
-                                <li>
-                                    <a href="">
-                                        <a target="_blank" href="https://instagram.com/iassets_org"><img src="/static/images/Icons/social/instagram.svg" alt=""></a>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <a target="_blank" href="https://t.me/iassets"><img src="/static/images/Icons/social/telegram.svg" alt=""></a>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <a target="_blank" href="https://t.me/iassets_org"><img src="/static/images/Icons/social/chat.svg" alt=""></a>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <a target="_blank" href="https://twitter.com/iassets_org"><img src="/static/images/Icons/social/twitter.svg" alt=""></a>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <a target="_blank" href="https://www.reddit.com/r/iAssets/"><img src="/static/images/Icons/social/reddit.svg" alt=""></a>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="">
-                                        <a target="_blank" href="https://discord.gg/Ungx7GjZkQ"><img src="/static/images/Icons/social/discord.svg" alt=""></a>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <h5>INFORMATION</h5>
-                    <ul>
-                        <li><a href="/about/">About</a></li> 
-                        <li><a href="/static/pdf/NFTBlackMarket.pdf">Black Paper</a></li> 
-                        <li><a href="/partners/">Partners</a></li> 
-                        <li><a href="/terms/">Terms of Service</a></li>
-                        <li><a href="/policy/">Privacy Policy</a></li> 
-                        
-                    </ul>
-                </div>
-                <div class="col-lg-3">
-                    <h5>AUDITS</h5>
-                    <ul>
-                        <li><a href="https://github.com/TechRate/Smart-Contract-Audits/blob/main/NFTBlackMarket.pdf">Tech Rate</a></li> 
-                        <li><a href="https://www.rugscreen.com/scan/certificate?tokenid=e12e7d7e13">Rug Screen</a></li> 
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="information">
+              <div class="logo">
+                <a class="navbar-brand" href="/">
+                  <img src="/logo.jpeg" width="185px" alt="" />
+                </a>
+              </div>
+              <p>
+                Mastermind Game Empowers creators with Blockchain Technology.
+                Making it more affordable than ever to represent anything as a
+                unique digital asset. On average users save up to 99% on gas
+                fees.
+              </p>
+              <div class="social">
+                <ul>
+                  <li>
+                    <a href="">
+                      <a
+                        target="_blank"
+                        href="https://t.me/mastermindgames_announcement"
+                        ><img
+                          src="/static/images/Icons/social/telegram.svg"
+                          alt=""
+                      /></a>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <a
+                        target="_blank"
+                        href="https://t.me/mastermindgames_announcement"
+                        ><img src="/static/images/Icons/social/chat.svg" alt=""
+                      /></a>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <a
+                        target="_blank"
+                        href="https://twitter.com/Mastermind_MGT"
+                        ><img
+                          src="/static/images/Icons/social/twitter.svg"
+                          alt=""
+                      /></a>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <a
+                        target="_blank"
+                        href="https://medium.com/@I_BLaCKBeaRD_I"
+                        ><img
+                          src="/static/images/Icons/social/reddit.svg"
+                          alt=""
+                      /></a>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      <a
+                        target="_blank"
+                        href="https://discord.com/invite/bSt3YssrMW"
+                        ><img
+                          src="/static/images/Icons/social/discord.svg"
+                          alt=""
+                      /></a>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h5>INFORMATION</h5>
+            <ul>
+              <li><a href="https://mastermindgames.io/">About</a></li>
+              <li>
+                <a
+                  href="https://mastermindgames.io/wp-content/uploads/2022/08/wp-1659501345554.pdf"
+                  >Master Plan</a
+                >
+              </li>
+              <li><a href="/partners/">Partners</a></li>
+              <li>
+                <a href="https://mastermindgames.io/terms-of-service/"
+                  >Terms of Service</a
+                >
+              </li>
+              <li><a href="/policy/">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5>ABOUT</h5>
+            <ul>
+              <li>
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdBk6gKvXXfJ2T-0_5kE1Xn-GqyWONcoR6sABdGdbMqXnMGzA/viewform"
+                  >Game Partnership</a
+                >
+              </li>
+              <li>
+                <a href="#">Games</a>
+              </li>
+            </ul>
+          </div>
 
-                <div class="col-lg-2">
-                    <h5>WEBSITES</h5>
-                    <ul>
-                        <li><a href="https://iAssets.org">iAssets.org</a></li> 
-                        <li><a href="https://iAssets.social">iAssets.social</a></li> 
-                    </ul>
-                </div>
-                
-            </div>
+          <div class="col-lg-2">
+            <h5>WEBSITES</h5>
+            <ul>
+              <li><a href="https://mastermindgames.io/">Mastermind Game</a></li>
+              <li>
+                <a href="https://www.mastermindswap.xyz/">Mastermind Swap</a>
+              </li>
+              <li><a href="https://ramp.network/buy/">Buy/Sell Crypto</a></li>
+              <li>
+                <a href="https://smartstaking-mastermindgames.xyz/"
+                  >Earn & Burn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="copyright">
-            <div class="container">
-                <p>Copyright 2021 by Refsnes Data. All Rights Reserved.</p>
-            </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <p>Copyright 2021 by Refsnes Data. All Rights Reserved.</p>
         </div>
+      </div>
     </footer>
 
-
-
-    
-
-    
-        
-
-
-<!-- Modals - Notification -->
+    <!-- Modals - Notification -->
     <div class="all-objects">
-        <div class="modal-connect-navbar">
-            <div class="modal fade" id="connectWallet"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">                    
-                            <h6 class="modal-title">Connect to a wallet</h6>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                            </button>
-                        </div>
-                        <div class="modal-body">
+      <div class="modal-connect-navbar">
+        <div
+          class="modal fade"
+          id="connectWallet"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">Connect to a wallet</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Befor Connect -->
+                <div id="modalConnect">
+                  <ul>
+                    <li>
+                      <button class="btn-gray" id="connectMetamask">
+                        <span>Metamask</span>
+                        <img
+                          src="/static/images/Icons/social/metmask.svg"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button class="btn-gray" id="connectTrustwallet">
+                        <span>TrustWallet</span>
+                        <img
+                          src="/static/images/Icons/social/trustwallet.svg"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button class="btn-gray" id="connectWalletConnect">
+                        <span>WalletConnect</span>
+                        <img
+                          src="/static/images/Icons/social/walletconnect.svg"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button class="btn-gray" id="connectTokenPocket">
+                        <span>TokenPocket</span>
+                        <img
+                          src="/static/images/Icons/social/tokenPocket.png"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button class="btn-gray" id="connectMathWallet">
+                        <span>MathWallet</span>
+                        <img
+                          src="/static/images/Icons/social/MathWallet.svg"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                    <li>
+                      <button class="btn-gray" id="connectSafePalWallet">
+                        <span>SafePalWallet</span>
+                        <img
+                          src="/static/images/Icons/social/safePall.svg"
+                          alt=""
+                        />
+                      </button>
+                    </li>
+                  </ul>
+                </div>
 
+                <!-- After Connect -->
 
-                            <!-- Befor Connect -->
-                            <div id="modalConnect">
-                                <ul>
-                                    
-                                    <li>
-                                        <button class="btn-gray" id="connectMetamask">
-                                            <span>Metamask</span>
-                                            <img src="/static/images/Icons/social/metmask.svg"  alt="">
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn-gray" id="connectTrustwallet">
-                                            <span>TrustWallet</span>
-                                            <img src="/static/images/Icons/social/trustwallet.svg"  alt="">
-                                        </button>
-                                        
-                                    </li>
-                                    <li>
-                                        <button class="btn-gray" id="connectWalletConnect">
-                                            <span>WalletConnect</span>
-                                            <img src="/static/images/Icons/social/walletconnect.svg"  alt="">
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn-gray" id="connectTokenPocket">
-                                            <span>TokenPocket</span>
-                                            <img src="/static/images/Icons/social/tokenPocket.png"  alt="">
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn-gray" id="connectMathWallet">
-                                            <span>MathWallet</span>
-                                            <img src="/static/images/Icons/social/MathWallet.svg"  alt="">
-                                        </button>
-                                    </li>
-                                    <li>
-                                        <button class="btn-gray" id="connectSafePalWallet">
-                                            <span>SafePalWallet</span>
-                                            <img src="/static/images/Icons/social/safePall.svg"  alt="">
-                                        </button>
-                                    </li>
-                                    
-                                    
-                                </ul>
-                            </div>
-
-                            <!-- After Connect -->
-
-                            <div id="modalConnected">
-                                <div class="profile">
-                                    <div class="info">
-                                        <div class="img">
-                                            <img id="modalImageProfile" src="/static/images/Icons/all/profile.svg" class="p-2" alt="">
-                                        </div>
-                                        <div class="name-email">
-                                            <h6 class="nameProfileConnect"></h6>
-                                            <h6 class="mailProfileConnect"></h6>
-                                        </div>
-                                    </div>
-                                    <!-- 
+                <div id="modalConnected">
+                  <div class="profile">
+                    <div class="info">
+                      <div class="img">
+                        <img
+                          id="modalImageProfile"
+                          src="/static/images/Icons/all/profile.svg"
+                          class="p-2"
+                          alt=""
+                        />
+                      </div>
+                      <div class="name-email">
+                        <h6 class="nameProfileConnect"></h6>
+                        <h6 class="mailProfileConnect"></h6>
+                      </div>
+                    </div>
+                    <!-- 
                                     <div >
                                         <br>
                                         <h6>My DMCA/VERIFY's List: <button class="btn btn-navy" data-bs-toggle="modal" data-bs-target="#modalRequestList">Show List</button></h6>
@@ -484,640 +641,1139 @@
                                         <h6>Verify your account: <button class="btn btn-green" data-bs-toggle="modal" data-bs-target="#modalVerificationForm">Verify Request</button></h6>
                                         
                                     </div>  -->
-                                    
-                                    <div class="specialModal">
-                                        <h6>My Requests</h6>
-                                        <div>
-                                            <button class="btn btn-navy" data-bs-toggle="modal" data-bs-target="#modalRequestList">View</button>                                        
-                                        </div>
-                                    </div>  
 
-                                    <div class="specialModal specialModalVerify">
-                                        <h6>Verify my account</h6>
-                                        <div>                                    
-                                            <button class="btn btn-green" data-bs-toggle="modal" data-bs-target="#modalVerificationForm">Request</button>
-                                        </div>
-                                    </div> 
-                                      
-                                            
-                                    <div class="address">
-                                        <h5 class="showAccount"></h5>
-                                        <h5 class="balanceBNB"><span>Balance BNB : </span></h5>
-                                        <h5 class="balanceNBM"><span>Balance NBM : </span></h5>
-                                    </div>
-                                </div>
-                                <div class="logout">
-                                    <div>
-                                        <a target="_blank" href="" id="viewOnBscLink">
-                                            <span class="px-1">View on BscScan</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="15.642" height="15.642" viewBox="0 0 15.642 15.642">
-                                                <g id="resize" transform="translate(-1 -1)">
-                                                    <g id="Group_426" data-name="Group 426" transform="translate(1 2.422)">
-                                                    <path id="Path_818" data-name="Path 818" d="M13.087,17.22H3.133A2.136,2.136,0,0,1,1,15.087V5.133A2.136,2.136,0,0,1,3.133,3H8.821a.711.711,0,0,1,0,1.422H3.133a.712.712,0,0,0-.711.711v9.954a.712.712,0,0,0,.711.711h9.954a.712.712,0,0,0,.711-.711V9.4a.711.711,0,1,1,1.422,0v5.688A2.136,2.136,0,0,1,13.087,17.22Z" transform="translate(-1 -3)" fill="#bebebe"/>
-                                                    </g>
-                                                    <path id="Path_819" data-name="Path 819" d="M18.532,1H14.266a.711.711,0,0,0-.5,1.214l1.63,1.63L10.208,9.029a.711.711,0,1,0,1.005,1.005L16.4,4.849l1.63,1.63a.711.711,0,0,0,.5.208.7.7,0,0,0,.272-.054.711.711,0,0,0,.439-.657V1.711A.711.711,0,0,0,18.532,1Z" transform="translate(-2.601)" fill="#bebebe"/>
-                                                </g>
-                                            </svg>                                              
-                                        </a>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div>
-                                            <a href="/myassets/" class="btn btn-green" data-toggle="tooltip" data-placement="bottom" title="My Assets" id="showethereum"><i class="fab fa-ethereum"></i></a>
-                                        </div>
-                                        <div>
-                                            <a href="" class="btn btn-green" data-toggle="tooltip" data-placement="bottom" title="Visit your profile" id="showProfile"></a>
-                                        </div>
-                                        <div>
-                                            <button class="btn btn-green" id="editProfile" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasWithBothOptions"  data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div>
-                                            <button class="btn btn-purple m-0" id="logoutMetamask">Logout</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="specialModal">
+                      <h6>My Requests</h6>
+                      <div>
+                        <button
+                          class="btn btn-navy"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalRequestList"
+                        >
+                          View
+                        </button>
+                      </div>
+                    </div>
 
-                        </div>  
-<!--                         
+                    <div class="specialModal specialModalVerify">
+                      <h6>Verify my account</h6>
+                      <div>
+                        <button
+                          class="btn btn-green"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalVerificationForm"
+                        >
+                          Request
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="address">
+                      <h5 class="showAccount"></h5>
+                      <h5 class="balanceBNB"><span>Balance BNB : </span></h5>
+                      <h5 class="balanceNBM"><span>Balance MGA : </span></h5>
+                    </div>
+                  </div>
+                  <div class="logout">
+                    <div>
+                      <a target="_blank" href="" id="viewOnBscLink">
+                        <span class="px-1">View on BscScan</span>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="15.642"
+                          height="15.642"
+                          viewBox="0 0 15.642 15.642"
+                        >
+                          <g id="resize" transform="translate(-1 -1)">
+                            <g
+                              id="Group_426"
+                              data-name="Group 426"
+                              transform="translate(1 2.422)"
+                            >
+                              <path
+                                id="Path_818"
+                                data-name="Path 818"
+                                d="M13.087,17.22H3.133A2.136,2.136,0,0,1,1,15.087V5.133A2.136,2.136,0,0,1,3.133,3H8.821a.711.711,0,0,1,0,1.422H3.133a.712.712,0,0,0-.711.711v9.954a.712.712,0,0,0,.711.711h9.954a.712.712,0,0,0,.711-.711V9.4a.711.711,0,1,1,1.422,0v5.688A2.136,2.136,0,0,1,13.087,17.22Z"
+                                transform="translate(-1 -3)"
+                                fill="#bebebe"
+                              />
+                            </g>
+                            <path
+                              id="Path_819"
+                              data-name="Path 819"
+                              d="M18.532,1H14.266a.711.711,0,0,0-.5,1.214l1.63,1.63L10.208,9.029a.711.711,0,1,0,1.005,1.005L16.4,4.849l1.63,1.63a.711.711,0,0,0,.5.208.7.7,0,0,0,.272-.054.711.711,0,0,0,.439-.657V1.711A.711.711,0,0,0,18.532,1Z"
+                              transform="translate(-2.601)"
+                              fill="#bebebe"
+                            />
+                          </g>
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="d-flex">
+                      <div>
+                        <a
+                          href="/myassets/"
+                          class="btn btn-green"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="My Assets"
+                          id="showethereum"
+                          ><i class="fab fa-ethereum"></i
+                        ></a>
+                      </div>
+                      <div>
+                        <a
+                          href=""
+                          class="btn btn-green"
+                          data-toggle="tooltip"
+                          data-placement="bottom"
+                          title="Visit your profile"
+                          id="showProfile"
+                        ></a>
+                      </div>
+                      <div>
+                        <button
+                          class="btn btn-green"
+                          id="editProfile"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#offcanvasScrolling"
+                          aria-controls="offcanvasWithBothOptions"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div>
+                        <button class="btn btn-purple m-0" id="logoutMetamask">
+                          Logout
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--                         
                         <div class="svg-shape">
                             <img src="/static/images/vector/sahpe-sm.svg" alt="">
                         </div> -->
-                    </div>
-                </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-         <!-- Modal Verification Form  -->
-         <div class="modal-tansfer">
-            <div class="modal fade" id="modalRequestList"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">                    
-                            <h6 class="modal-title">Requests List</h6>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                            </button>
+      <!-- Modal Verification Form  -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="modalRequestList"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">Requests List</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="accordion" id="accordion-request-list">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                      <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#dacma-request"
+                        aria-expanded="true"
+                        aria-controls="collapseOne"
+                      >
+                        DMCA
+                      </button>
+                    </h2>
+                    <div
+                      id="dacma-request"
+                      class="accordion-collapse collapse show"
+                      aria-labelledby="headingOne"
+                      data-bs-parent="#accordion-request-list"
+                    >
+                      <div class="accordion-body">
+                        <div class="table-responsive">
+                          <table class="table table-striped table-bordered">
+                            <thead class="">
+                              <tr>
+                                <th>Code</th>
+                                <th>Address</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                              </tr>
+                            </thead>
+                            <tbody></tbody>
+                          </table>
                         </div>
-                        <div class="modal-body">                                
-                            <div class="accordion" id="accordion-request-list">
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#dacma-request" aria-expanded="true" aria-controls="collapseOne">
-                                            DMCA
-                                        </button>
-                                    </h2>
-                                    <div id="dacma-request" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordion-request-list">
-                                        <div class="accordion-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-striped table-bordered">
-                                                    <thead class="">
-                                                        <tr>
-                                                            <th>Code</th>
-                                                            <th>Address</th>
-                                                            <th>Status</th>
-                                                            <th>Date</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        
-                                                     </tbody>
-                                                 </table>
-                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#verify-request" aria-expanded="false" aria-controls="collapseTwo">
-                                        Verification Request
-                                    </button>
-                                    </h2>
-                                    <div id="verify-request" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordion-request-list">
-                                        <div class="accordion-body">
-                                            <div class="table-responsive">
-                                                <table class="table table-striped table-bordered">
-                                                    <thead class="">
-                                                        <tr>
-                                                            <th>Code</th>
-                                                            <th>Address</th>
-                                                            <th>Status</th>
-                                                            <th>Date</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        
-                                                     </tbody>
-                                                 </table>
-                                             </div>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                              </div>
-                        </div>  
-
+                      </div>
                     </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#verify-request"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        Verification Request
+                      </button>
+                    </h2>
+                    <div
+                      id="verify-request"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="headingTwo"
+                      data-bs-parent="#accordion-request-list"
+                    >
+                      <div class="accordion-body">
+                        <div class="table-responsive">
+                          <table class="table table-striped table-bordered">
+                            <thead class="">
+                              <tr>
+                                <th>Code</th>
+                                <th>Address</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                              </tr>
+                            </thead>
+                            <tbody></tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Modal Verification Form  -->
-        <div class="modal-tansfer">
-            <div class="modal fade" id="modalVerificationForm"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">                    
-                            <h6 class="modal-title">Verification Form</h6>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                            </button>
+      <!-- Modal Verification Form  -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="modalVerificationForm"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">Verification Form</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="form">
+                      <div class="row">
+                        <div class="form-group col-lg-6 col-12">
+                          <label for="" class="form-label">Full Name</label>
+                          <input
+                            type="text"
+                            placeholder="Title"
+                            id="nameInputVerification"
+                            class="form-control"
+                          />
+                          <small></small>
                         </div>
-                        <div class="modal-body">                                
-                            <div class="row"> 
-                                
-                                <div class="col-lg-12">
-                                    <div class="form">
-                                        <div class="row">
-                                            <div class="form-group col-lg-6 col-12">
-                                                <label for="" class="form-label">Full Name</label>                                                
-                                                <input type="text" placeholder="Title" id="nameInputVerification" class="form-control">
-                                                <small></small>
-                                            </div>
-                                            <div class="form-group col-lg-6 col-12">
-                                                <label for="" class="form-label">Email</label>                                                
-                                                <input type="text" placeholder="Email" id="emailInputVerification" class="form-control">
-                                                <small></small>
-                                            </div>
-                                            <div class="form-group col-lg-6 col-12">
-                                                <label for="" class="form-label">Wallet Address</label>                                                
-                                                <input type="text" placeholder="Origin" id="walletInputVerification" readonly class="form-control">
-                                                <small></small>
-                                            </div>
-                                            <div class="form-group col-lg-6 col-12">
-                                                <label for="" class="form-label">Social Media</label>                                                
-                                                <input type="text" placeholder="Twitter , instagram ..." id="socialInputVerification" class="form-control">
-                                                <small></small>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>  
-
-                                <div class="col-lg-12">      
-                                    <div class="row">            
-                                        <div class="col-lg-6 col-12">
-                                            <div class="uploader music mb-3">                                                                                
-                                                <label for="" class="form-label">A clear picture of your national id card or driving licence or passport.</label>
-                                                <label for="file-uploader-1" class="custom-file-upload-music" id="cover-uploader-1">
-                                                    <div class="remove-file">
-            
-                                                    </div>
-                                                    <div class="content" id="showUploader_picture_national_passport">                                                
-                                                        <i class="fas fa-cloud-upload-alt"></i>
-                                                    
-                                                        <span>Upload Photo</span>
-                                                    </div>
-                                                </label>
-                                                <input id="file-uploader-1" accept="image/*" onchange="uploader_picture_national_passport(event, true);" type="file"/>
-                                            </div>                                           
-                                        </div>
-
-                                        <div class="col-lg-6 col-12 mb-3">
-                                            <div class="uploader music">                                                                                
-                                                <label for="" class="form-label">A clear picture of your face with your national id card or driving licence or passport.</label>
-                                                <label for="file-uploader_2" class="custom-file-upload-music" id="cover-uploader_2">
-                                                    <div class="remove-file">
-
-                                                    </div>
-                                                    <div class="content" id="showUploader_picture_face">
-                                                        <i class="fas fa-cloud-upload-alt"></i>
-                                                    
-                                                        <span>Upload Photo</span>
-                                                    </div>
-                                                </label>
-                                                <input id="file-uploader_2" accept="image/*" onchange="uploader_picture_face(event, true);" type="file"/>
-                                            </div>                                           
-                                        </div>
-
-                                        <div class="col-12 ">
-                                            <div class="uploader music">                                                                                
-                                                <label for="" class="form-label">A clear picture of your face with this note on a paper : this is for iAssets.market.</label>
-                                                <label for="file-uploader_3" class="custom-file-upload-music" id="cover-uploader_3">
-                                                    <div class="remove-file">
-
-                                                    </div>
-                                                    <div class="content" id="showUploader_face_with_paper">
-                                                        <i class="fas fa-cloud-upload-alt"></i>
-                                                    
-                                                        <span>Upload Photo</span>
-                                                    </div>
-                                                </label>
-                                                <input id="file-uploader_3" accept="image/*" onchange="uploader_face_with_paper(event, true);" type="file"/>
-                                            </div>                                           
-                                        </div>
-                                    </div>                          
-    
-                                </div>  
-                                <div class="col-12 mt-4"> 
-                                    <p>This form is for authentication and gets a golden Checkmark in iAssets.market. By having this Golden Checkmark, other users can be sure that you are the actual artist, musician, or creator. We don't keep this information, and after verification, we will delete all your documents and information you sent to us.</p>                                                               
-                                    <div class="progress mb-3">
-                                        <div class="progress-bar" id="verify-progress" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
-                                    </div>  
-                                    <button class="btn-navy" id="submitVerification" onclick="submitFormVerification()">Submit</button>                                              
-                                </div>                                                      
-                            </div>
-                        </div>  
-
+                        <div class="form-group col-lg-6 col-12">
+                          <label for="" class="form-label">Email</label>
+                          <input
+                            type="text"
+                            placeholder="Email"
+                            id="emailInputVerification"
+                            class="form-control"
+                          />
+                          <small></small>
+                        </div>
+                        <div class="form-group col-lg-6 col-12">
+                          <label for="" class="form-label"
+                            >Wallet Address</label
+                          >
+                          <input
+                            type="text"
+                            placeholder="Origin"
+                            id="walletInputVerification"
+                            readonly
+                            class="form-control"
+                          />
+                          <small></small>
+                        </div>
+                        <div class="form-group col-lg-6 col-12">
+                          <label for="" class="form-label">Social Media</label>
+                          <input
+                            type="text"
+                            placeholder="Twitter , instagram ..."
+                            id="socialInputVerification"
+                            class="form-control"
+                          />
+                          <small></small>
+                        </div>
+                      </div>
                     </div>
+                  </div>
+
+                  <div class="col-lg-12">
+                    <div class="row">
+                      <div class="col-lg-6 col-12">
+                        <div class="uploader music mb-3">
+                          <label for="" class="form-label"
+                            >A clear picture of your national id card or driving
+                            licence or passport.</label
+                          >
+                          <label
+                            for="file-uploader-1"
+                            class="custom-file-upload-music"
+                            id="cover-uploader-1"
+                          >
+                            <div class="remove-file"></div>
+                            <div
+                              class="content"
+                              id="showUploader_picture_national_passport"
+                            >
+                              <i class="fas fa-cloud-upload-alt"></i>
+
+                              <span>Upload Photo</span>
+                            </div>
+                          </label>
+                          <input
+                            id="file-uploader-1"
+                            accept="image/*"
+                            onchange="uploader_picture_national_passport(event, true);"
+                            type="file"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-lg-6 col-12 mb-3">
+                        <div class="uploader music">
+                          <label for="" class="form-label"
+                            >A clear picture of your face with your national id
+                            card or driving licence or passport.</label
+                          >
+                          <label
+                            for="file-uploader_2"
+                            class="custom-file-upload-music"
+                            id="cover-uploader_2"
+                          >
+                            <div class="remove-file"></div>
+                            <div class="content" id="showUploader_picture_face">
+                              <i class="fas fa-cloud-upload-alt"></i>
+
+                              <span>Upload Photo</span>
+                            </div>
+                          </label>
+                          <input
+                            id="file-uploader_2"
+                            accept="image/*"
+                            onchange="uploader_picture_face(event, true);"
+                            type="file"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="col-12">
+                        <div class="uploader music">
+                          <label for="" class="form-label"
+                            >A clear picture of your face with this note on a
+                            paper : this is for iAssets.market.</label
+                          >
+                          <label
+                            for="file-uploader_3"
+                            class="custom-file-upload-music"
+                            id="cover-uploader_3"
+                          >
+                            <div class="remove-file"></div>
+                            <div
+                              class="content"
+                              id="showUploader_face_with_paper"
+                            >
+                              <i class="fas fa-cloud-upload-alt"></i>
+
+                              <span>Upload Photo</span>
+                            </div>
+                          </label>
+                          <input
+                            id="file-uploader_3"
+                            accept="image/*"
+                            onchange="uploader_face_with_paper(event, true);"
+                            type="file"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 mt-4">
+                    <p>
+                      This form is for authentication and gets a golden
+                      Checkmark in iAssets.market. By having this Golden
+                      Checkmark, other users can be sure that you are the actual
+                      artist, musician, or creator. We don't keep this
+                      information, and after verification, we will delete all
+                      your documents and information you sent to us.
+                    </p>
+                    <div class="progress mb-3">
+                      <div
+                        class="progress-bar"
+                        id="verify-progress"
+                        role="progressbar"
+                        style="width: 0%"
+                        aria-valuenow="25"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                      >
+                        25%
+                      </div>
+                    </div>
+                    <button
+                      class="btn-navy"
+                      id="submitVerification"
+                      onclick="submitFormVerification()"
+                    >
+                      Submit
+                    </button>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Modal Report Form  -->
-        <div class="modal-tansfer">
-            <div class="modal fade" id="modalFormReport"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">                    
-                            <h6 class="modal-title">Report Form</h6>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                            </button>
-                        </div>
-                        <div class="modal-body">                                
-                            <div class="form" >
-                                <div class="row">
-
-                                    <div class="form-group col-lg-12">
-                                        <label for="" class="form-label">Title</label>                                                
-                                        <input type="text" placeholder="Title" id="titleinputSubmit" class="form-control titleinput">
-                                        <small></small>
-                                    </div>
-
-                                    <div class="form-group col-lg-12">
-                                        <label for="" class="form-label">Token Address</label>                                                
-                                        <input type="text" placeholder="URL" id="tokeninputSubmit" readonly class="form-control titleinput">
-                                        <small></small>
-                                    </div>
-
-                                    <div class="form-group col-lg-12">
-                                        <label for="" class="form-label">Reporter</label>                                                
-                                        <input type="text" placeholder="Please connect your wallet" id="reporterinputSubmit" readonly class="form-control titleinput">
-                                        <small></small>
-                                    </div>
-                                                                        
-                                    <div class="form-group col-lg-12">
-                                        <label for="" class="form-label">Description</label>                                                
-                                        <textarea  id="descriptionInputSubmit" cols="10" rows="5" class="form-control" placeholder="Description"></textarea>
-                                    </div>        
-                                </div>
-                                
-                                <div class="col-12 mt-4">
-                                    
-                                    <div class="d-flex justify-content-between flex-column flex-md-row">
-                                        <div class="d-flex">                                            
-                                            <button class="btn-navy" id="submitFormReport" onclick="submitFormReport()">Submit</button>                                            
-                                        </div>                                    
-                                        
-                                    </div>
-    
-                                </div>
-                            </div>
-                        </div>  
-
+      <!-- Modal Report Form  -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="modalFormReport"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">Report Form</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form">
+                  <div class="row">
+                    <div class="form-group col-lg-12">
+                      <label for="" class="form-label">Title</label>
+                      <input
+                        type="text"
+                        placeholder="Title"
+                        id="titleinputSubmit"
+                        class="form-control titleinput"
+                      />
+                      <small></small>
                     </div>
+
+                    <div class="form-group col-lg-12">
+                      <label for="" class="form-label">Token Address</label>
+                      <input
+                        type="text"
+                        placeholder="URL"
+                        id="tokeninputSubmit"
+                        readonly
+                        class="form-control titleinput"
+                      />
+                      <small></small>
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                      <label for="" class="form-label">Reporter</label>
+                      <input
+                        type="text"
+                        placeholder="Please connect your wallet"
+                        id="reporterinputSubmit"
+                        readonly
+                        class="form-control titleinput"
+                      />
+                      <small></small>
+                    </div>
+
+                    <div class="form-group col-lg-12">
+                      <label for="" class="form-label">Description</label>
+                      <textarea
+                        id="descriptionInputSubmit"
+                        cols="10"
+                        rows="5"
+                        class="form-control"
+                        placeholder="Description"
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-12 mt-4">
+                    <div
+                      class="d-flex justify-content-between flex-column flex-md-row"
+                    >
+                      <div class="d-flex">
+                        <button
+                          class="btn-navy"
+                          id="submitFormReport"
+                          onclick="submitFormReport()"
+                        >
+                          Submit
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-        <!-- Modal Transfer -->
-            <div class="modal-tansfer">
-                <div class="modal fade" id="receiverAddress"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header border-0">                    
-                                <h6 class="modal-title">Receiver address</h6>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                    <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="form-group">
-                                    <h6 class="mb-3">The number of your tokens : <span class="countNumberToken"></span></h6>
-                                    <input type="text" class="form-control" id="inputCountTransfer" placeholder="Example: 1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
-                                    <input type="text" class="form-control" id="transferInputModal" placeholder="Address">
-                                    <button class="btn btn-green w-100" id="transferButtonModal" onclick="transfer()">Transfer</button>
-                                </div>
-                            </div>  
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        
-
-        <!-- Modal Burn  -->
-            <div class="modal-tansfer" >
-                <div class="modal fade" id="burnModal"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header border-0">                    
-                                <h6 class="modal-title">How many Tokens do you want to Burn?</h6>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                    <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <h6 class="mb-3">Number of Tokens you can Burn : <span class="countNumberToken"></span></h6>
-                                <div class="form-group">
-                                    <input type="text" class="form-control" id="burnInputModal" placeholder="Example: 1" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
-                                    <button class="btn btn-red w-100" id="burnButtonModal" onclick="burn()">Burn</button>
-                                </div>
-                            </div>  
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-
-        <!-- Modal Policy  -->
-            <div class="modal-tansfer" >
-                <div class="modal fade" id="policyModal"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header border-0">                    
-                                <p class="mb-3">Your address has not accepted Terms of Service and Privacy Policy</p>
-                            </div>
-                            <div class="modal-body">
-
-                                <div>
-                                    View <a href="/policy/">Privacy Policy</a>
-                                </div>
-                                <div>
-                                    View <a href="/terms/">Terms of Service</a>
-                                </div>
-
-                                <button class="btn btn-green mt-4 w-100" id="confirmPolicy" onclick="confirmPolicy()">Confirm</button>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-            </div>
-        
-
-            <div class="all-offcanvas">
-                <div class="offcanvas offcanvas-start" data-bs-scroll="false" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-                    <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Update Profile</h5>
-                  <button type="button" class="btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
-                      <img src="/static/images/Icons/all/close.svg" alt="">
+      <!-- Modal Transfer -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="receiverAddress"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">Receiver address</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <h6 class="mb-3">
+                    The number of your tokens :
+                    <span class="countNumberToken"></span>
+                  </h6>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCountTransfer"
+                    placeholder="Example: 1"
+                    oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                  />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="transferInputModal"
+                    placeholder="Address"
+                  />
+                  <button
+                    class="btn btn-green w-100"
+                    id="transferButtonModal"
+                    onclick="transfer()"
+                  >
+                    Transfer
                   </button>
                 </div>
-                <div class="offcanvas-body">
-                    <div class="uploader">                                                                                                              
-                        <label for="file-upload-profile" class="custom-file-upload" id="cover-file-upload-profile">
-                            <div>
-                                <img src="/static/images/Icons/all/upload.svg" alt="">
-                                <span>Upload Profile</span>
-                            </div>
-                        </label>
-                        <input id="file-upload-profile" accept="image/*" onchange="compressProfile(event, true);" type="file"/>                                    
-                    </div>
-                    <button class="btn btn-remove" id="removeProfileButton" onclick="removeProfile()">Clear Profile</button>
-                    <div class="form">
-                        <div class="form-group">
-                            <label for="" class="form-label">FUll Name</label>
-                            <input type="text" placeholder="iAssets.Market User" id="nameProfile" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="form-label">Email</label>
-                            <input type="text" placeholder="example@domain.com" id="emailProfile" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="form-label">Facebook</label>
-                            <input type="text" placeholder="facebook.com/example" id="facebookProfile" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="form-label">Instagram</label>
-                            <input type="text" placeholder="instagram.com/example" id="instagramProfile" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="form-label">Telegram</label>
-                            <input type="text" placeholder="t.me/example" id="telegramProfile" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="form-label">Twitter</label>
-                            <input type="text" placeholder="twitter.com/example" id="twitterProfile" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="" class="form-label">Website</label>
-                            <input type="text" placeholder="example.com" id="websiteProfile" class="form-control">
-                        </div>
-                        <div>
-                            <label for="" class="form-label">Bio</label>
-                            <textarea  id="bioProfile" cols="10" rows="4" class="form-control"></textarea>
-                        </div>
-                        <button class="btn btn-yellow w-100" id="updateProfileButton" onclick="updateProfile()">Update Profile</button>
-                    </div>
-                </div>                  
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-        <!-- Modal Change Category -->
-        <div class="modal-tansfer">
-            <div class="modal fade" id="changeCategory"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">                    
-                            <h6 class="modal-title">Change category</h6>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                            </button>
-                        </div>
-                        <div class="modal-body">                                
-                            <label for="" class="form-label">Category Select</label>
-                            <div class="form-group">
-                                <select name="" id="categorySelectOption" class="form-select">                                    
-                                </select>
-                                <button class="btn btn-green w-100" id="changeCategoryButton" onclick="changeCategory()">Submit</button>
-                            </div>
-                        </div>  
-                    </div>
+      <!-- Modal Burn  -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="burnModal"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">
+                  How many Tokens do you want to Burn?
+                </h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <h6 class="mb-3">
+                  Number of Tokens you can Burn :
+                  <span class="countNumberToken"></span>
+                </h6>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="burnInputModal"
+                    placeholder="Example: 1"
+                    oninput="this.value=this.value.replace(/[^0-9]/g,'');"
+                  />
+                  <button
+                    class="btn btn-red w-100"
+                    id="burnButtonModal"
+                    onclick="burn()"
+                  >
+                    Burn
+                  </button>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
+      <!-- Modal Policy  -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="policyModal"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <p class="mb-3">
+                  Your address has not accepted Terms of Service and Privacy
+                  Policy
+                </p>
+              </div>
+              <div class="modal-body">
+                <div>View <a href="/policy/">Privacy Policy</a></div>
+                <div>View <a href="/terms/">Terms of Service</a></div>
 
-        <!-- Modal Change Price -->
-            <div class="modal-tansfer">
-                <div class="modal fade" id="changePriceModal"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header border-0">                    
-                                <h6 class="modal-title">Change Price</h6>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                    <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                                </button>
-                            </div>
-                            <div class="modal-body">             
-                                <div>
-                                    <label for="" class="form-label">Price of each token (BNB)</label>
-                                    <input type="text" class="form-control" id="changePriceInput" placeholder="Example: 0.7">                                                                                       
-                                </div>
-                                <button class="btn btn-green w-100" id="changePriceButton" onclick="changePrice()">Submit</button>                                
-                            </div>  
-                        </div>
-                    </div>
+                <button
+                  class="btn btn-green mt-4 w-100"
+                  id="confirmPolicy"
+                  onclick="confirmPolicy()"
+                >
+                  Confirm
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="all-offcanvas">
+        <div
+          class="offcanvas offcanvas-start"
+          data-bs-scroll="false"
+          data-bs-backdrop="false"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+              Update Profile
+            </h5>
+            <button
+              type="button"
+              class="btn text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            >
+              <img src="/static/images/Icons/all/close.svg" alt="" />
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="uploader">
+              <label
+                for="file-upload-profile"
+                class="custom-file-upload"
+                id="cover-file-upload-profile"
+              >
+                <div>
+                  <img src="/static/images/Icons/all/upload.svg" alt="" />
+                  <span>Upload Profile</span>
                 </div>
+              </label>
+              <input
+                id="file-upload-profile"
+                accept="image/*"
+                onchange="compressProfile(event, true);"
+                type="file"
+              />
             </div>
-        
+            <button
+              class="btn btn-remove"
+              id="removeProfileButton"
+              onclick="removeProfile()"
+            >
+              Clear Profile
+            </button>
+            <div class="form">
+              <div class="form-group">
+                <label for="" class="form-label">FUll Name</label>
+                <input
+                  type="text"
+                  placeholder="iAssets.Market User"
+                  id="nameProfile"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">Email</label>
+                <input
+                  type="text"
+                  placeholder="example@domain.com"
+                  id="emailProfile"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">Facebook</label>
+                <input
+                  type="text"
+                  placeholder="facebook.com/example"
+                  id="facebookProfile"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">Instagram</label>
+                <input
+                  type="text"
+                  placeholder="instagram.com/example"
+                  id="instagramProfile"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">Telegram</label>
+                <input
+                  type="text"
+                  placeholder="t.me/example"
+                  id="telegramProfile"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">Twitter</label>
+                <input
+                  type="text"
+                  placeholder="twitter.com/example"
+                  id="twitterProfile"
+                  class="form-control"
+                />
+              </div>
+              <div class="form-group">
+                <label for="" class="form-label">Website</label>
+                <input
+                  type="text"
+                  placeholder="example.com"
+                  id="websiteProfile"
+                  class="form-control"
+                />
+              </div>
+              <div>
+                <label for="" class="form-label">Bio</label>
+                <textarea
+                  id="bioProfile"
+                  cols="10"
+                  rows="4"
+                  class="form-control"
+                ></textarea>
+              </div>
+              <button
+                class="btn btn-yellow w-100"
+                id="updateProfileButton"
+                onclick="updateProfile()"
+              >
+                Update Profile
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-        <!-- Modal Create Token -->
-        <div class="modal-tansfer">
-            <div class="modal fade" id="createTokenModal"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">                    
-                            <h6 class="modal-title">What do you want to create?</h6>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                            </button>
-                        </div>
-                        <div class="modal-body">                                
-                            <div class="d-flex py-3">
-                                <a href="/app/" class="btn btn-yellow w-100"><i class="fas fa-image me-1"></i> Create Art NFT</a>
-                                <a href="/app-music/" class="btn btn-yellow w-100 ms-2"><i class="fas fa-music"></i> Create Music NFT</a>
-                            </div>
-                        </div>  
-                    </div>
+      <!-- Modal Change Category -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="changeCategory"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">Change category</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <label for="" class="form-label">Category Select</label>
+                <div class="form-group">
+                  <select
+                    name=""
+                    id="categorySelectOption"
+                    class="form-select"
+                  ></select>
+                  <button
+                    class="btn btn-green w-100"
+                    id="changeCategoryButton"
+                    onclick="changeCategory()"
+                  >
+                    Submit
+                  </button>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <!-- Modal Choose Market -->
-        <div class="modal-tansfer">
-            <div class="modal fade" id="chooseMarketModal"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">                    
-                            <h6 class="modal-title">Select the Marketplace</h6>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                            </button>
-                        </div>
-                        <div class="modal-body">                                
-                            <div class="d-flex py-3">
-                                <a href="/market/" class="btn btn-navy w-100"><i class="fas fa-image me-1"></i> Art Marketplace</a>
-                                <a href="/market-music/" class="btn btn-navy w-100 ms-2"><i class="fas fa-music"></i> Music Marketplace</a>
-                            </div>
-                        </div>  
-
-                    </div>
+      <!-- Modal Change Price -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="changePriceModal"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">Change Price</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <label for="" class="form-label"
+                    >Price of each token (BNB)</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="changePriceInput"
+                    placeholder="Example: 0.7"
+                  />
                 </div>
+                <button
+                  class="btn btn-green w-100"
+                  id="changePriceButton"
+                  onclick="changePrice()"
+                >
+                  Submit
+                </button>
+              </div>
             </div>
+          </div>
         </div>
-        
+      </div>
 
-        <div class="modal-tansfer">
-            <div 
-                class="modal fade" 
-                id="lineChartModal"  
-                data-bs-keyboard="false" 
-                tabindex="-1" 
-                aria-labelledby="staticBackdropLabel" 
-                aria-hidden="true"        
-                >         
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">                    
-                            <h6 class="modal-title">Chart</h6>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                <img src="/static/images/Icons/all/close.svg" width="13px" alt="">
-                            </button>
-                        </div>
-                        <div class="modal-body">             
-                            <canvas id="myChart" style="width:100%;max-width:700px"></canvas>             
-                        </div>  
-                    </div>
+      <!-- Modal Create Token -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="createTokenModal"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">What do you want to create?</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex py-3">
+                  <a href="/app/" class="btn btn-yellow w-100"
+                    ><i class="fas fa-image me-1"></i> Create Art NFT</a
+                  >
+                  <a href="/app-music/" class="btn btn-yellow w-100 ms-2"
+                    ><i class="fas fa-music"></i> Create Music NFT</a
+                  >
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-
-        <div class="modal-alerts">
-
-        </div>
-
-        <!-- Modal Update news -->
-        <div class="modal-tansfer">
-            <div class="modal fade" id="updateModal"  data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header border-0">                    
-                            <h6 class="modal-title">NFTBlackMarket Rebranded to iAssets</h6>
-                            <button type="button" class="btn p-0 m-0" data-bs-dismiss="modal" aria-label="Close">
-                                <i class="fas fa-times color-btn-close"></i>    
-                            </button>
-                        </div>
-                        <div class="modal-body">                                
-                            <div class="update">
-                                <p>All your NFTs are safe and secure </p>
-                                <p>We will update and rebrand this website step by step.</p>
-                                
-                                <div class="more mt-2">
-                                    <h6>ASSET is the new token</h6>
-                                    <h6>Contract Address :</h6>
-                                    <a target="_blank"  href="https://bscscan.com/token/0x6b471d5ab9f3d92a600e7d49a0b135bf6d4c6a5b">0x6b471d5ab9f3d92a600e7d49a0b135bf6d4c6a5b</a>
-                                    <div class="divider"></div>
-                                    <h6>Only swap your NBM Tokens (OLD) to ASSET Tokens (NEW) in this Website:</h6>
-                                    <a target="_blank"  href="https://iAssets.org?convert=true">https://iassets.org?convert=true</a>
-                                    <div class="divider"></div>
-                                    <h6>for more details <a target="_blank" href="https://iAssets.org"> <i class='bx bx-link-external'></i> iAssets</a></h6>
-                                </div>
-                            </div>
-                        </div>  
-                    </div>
+      <!-- Modal Choose Market -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="chooseMarketModal"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">Select the Marketplace</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="d-flex py-3">
+                  <a href="/market/" class="btn btn-navy w-100"
+                    ><i class="fas fa-image me-1"></i> Art Marketplace</a
+                  >
+                  <a href="/market-music/" class="btn btn-navy w-100 ms-2"
+                    ><i class="fas fa-music"></i> Music Marketplace</a
+                  >
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
 
-        <div id="image-viewer">    
-            <span class="close">&times;</span>        
-            <img class="modal-content" id="full-image">        
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="lineChartModal"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">Chart</h6>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <img
+                    src="/static/images/Icons/all/close.svg"
+                    width="13px"
+                    alt=""
+                  />
+                </button>
+              </div>
+              <div class="modal-body">
+                <canvas
+                  id="myChart"
+                  style="width: 100%; max-width: 700px"
+                ></canvas>
+              </div>
+            </div>
+          </div>
         </div>
-        
+      </div>
+
+      <div class="modal-alerts"></div>
+
+      <!-- Modal Update news -->
+      <div class="modal-tansfer">
+        <div
+          class="modal fade"
+          id="updateModal"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header border-0">
+                <h6 class="modal-title">NFTBlackMarket Rebranded to iAssets</h6>
+                <button
+                  type="button"
+                  class="btn p-0 m-0"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <i class="fas fa-times color-btn-close"></i>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="update">
+                  <p>All your NFTs are safe and secure</p>
+                  <p>We will update and rebrand this website step by step.</p>
+
+                  <div class="more mt-2">
+                    <h6>ASSET is the new token</h6>
+                    <h6>Contract Address :</h6>
+                    <a
+                      target="_blank"
+                      href="https://bscscan.com/address/0xDa7c8b7374f600b229Be7B7A237ad178329530b9"
+                      >0xDa7c8b7374f600b229Be7B7A237ad178329530b9</a
+                    >
+                    <div class="divider"></div>
+                    <h6>
+                      Only swap your NBM Tokens (OLD) to ASSET Tokens (NEW) in
+                      this Website:
+                    </h6>
+                    <a target="_blank" href="https://iAssets.org?convert=true"
+                      >https://iassets.org?convert=true</a
+                    >
+                    <div class="divider"></div>
+                    <h6>
+                      for more details
+                      <a target="_blank" href="https://iAssets.org">
+                        <i class="bx bx-link-external"></i> iAssets</a
+                      >
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="image-viewer">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="full-image" />
+      </div>
     </div>
-
-
-    
-
-
   </body>
 
-    <!-- Walletconnect -->
-    <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
-    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider"></script>
+  <!-- Walletconnect -->
+  <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
+  <script type="text/javascript" src="https://unpkg.com/web3modal"></script>
+  <script
+    type="text/javascript"
+    src="https://unpkg.com/@walletconnect/web3-provider"
+  ></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>  
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    
-    
-    <script src="/static/js/blackmarket/bootstrap.min.js"></script>
-    <script src="/static/js/blackmarket/all.js"></script>
-    <script src="/static/js/blackmarket/moment.js"></script>
-    <script src="/static/js/blackmarket/chart.js"></script>
-    <script src="/static/js/blackmarket/owl.carousel.min.js"></script>
-    <script src="/static/js/blackmarket/viewer.js"></script>
-    <script type="text/javascript" src="/static/js/blackmarket/browser-image-compression.js"></script>
-    
-    
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+    integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <script src="/static/js/blackmarket/extentions.js"></script>
-    <script src="/static/js/blackmarket/market.js"></script>
-    <script src="/static/js/blackmarket/search.js"></script>
+  <script src="/static/js/blackmarket/bootstrap.min.js"></script>
+  <script src="/static/js/blackmarket/all.js"></script>
+  <script src="/static/js/blackmarket/moment.js"></script>
+  <script src="/static/js/blackmarket/chart.js"></script>
+  <script src="/static/js/blackmarket/owl.carousel.min.js"></script>
+  <script src="/static/js/blackmarket/viewer.js"></script>
+  <script
+    type="text/javascript"
+    src="/static/js/blackmarket/browser-image-compression.js"
+  ></script>
+
+  <script src="/static/js/blackmarket/extentions.js"></script>
+  <script src="/static/js/blackmarket/market.js"></script>
+  <script src="/static/js/blackmarket/search.js"></script>
 </html>
